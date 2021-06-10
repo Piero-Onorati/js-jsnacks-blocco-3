@@ -2,13 +2,6 @@
 Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]. */
 
-var letters = ['a','b','c']
-var numbers = [1,2,3];
-
-var myArray = fusion(letters, numbers)
-
-console.log(myArray);
-
 function fusion(array1,array2) {
 
     while (array1.length != array2.length) {
@@ -25,3 +18,10 @@ function fusion(array1,array2) {
 
     return newarray;
 }
+
+var letters = ['a','b','c'];
+var numbers = [1,2,3];
+
+var myArray = fusion(letters, numbers);
+
+document.getElementById('funzioni3').innerHTML = myArray;

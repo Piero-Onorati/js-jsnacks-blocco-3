@@ -6,9 +6,9 @@ function range(array, a, b) {
     // controlli affinchè "a" sia sempre inferiore a "b" e "b" non sia mai maggiore della lunghezza totale dell'array da cui vado ad estrarre gli elementi //
 
     if (a > b ){
-        alert('Attenzione!'+ a +' deve essere più piccolo di '+ b ) 
+        alert('Attenzione!'+ a +' deve essere più piccolo di '+ b );
     } else if(b > array.length){
-        alert('Attenzione!'+ b +' non può essere più grande di '+ array.length ) 
+        alert('Attenzione!'+ b +' non può essere più grande di '+ array.length );
     }
 
     // soluzione a) con ".slice()"
@@ -23,13 +23,13 @@ function range(array, a, b) {
         newarray.push(array[i]);
     }
 
-    return newarray
+    return newarray;
     
 }
 
 var numbers = [1,2,3,4,5,6,7];
 
-var things = ['case', 'libri', 'auto', 'viaggi', 'fogli', 'giornale']
+var things = ['case', 'libri', 'auto', 'viaggi', 'fogli', 'giornale'];
 
 
 var myNewArray = range(numbers,2,5);
