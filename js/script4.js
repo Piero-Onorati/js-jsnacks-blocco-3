@@ -9,8 +9,8 @@ function capitalize(string) {
     
 }
 
-var word = 'piero';
+var word = prompt('Inserisci una parola,la formatterò correttamente!');
 
 var capWord = capitalize(word);
 
-console.log(capWord);
+document.getElementById('funzioni4').innerHTML = capWord;
